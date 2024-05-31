@@ -6,6 +6,8 @@ form button {
     margin: 0.5em;
     margin-inline: auto;
     display: block;
+    border: none;
+    background-color: transparent;
 
 
 }
