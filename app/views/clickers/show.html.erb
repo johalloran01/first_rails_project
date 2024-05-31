@@ -1,0 +1,22 @@
+<h1><%=@clicker.brownie.flavor.humanize %></h1>
+<%= form_with url: clickers_click_path do |form| %>
+    <%= form.button do %>
+        <img src="https://lh6.googleusercontent.com/proxy/79oWOl1U-FFda7u6QpRTkslOC9-FYKPARBcC_ZEu2gmSw-K2ImXEwwUzfR8HtRkgREb-E1qzwbyuMgA2BhPwBj9mY_iGtAqW0GbQbqQAjcIjfOjnT1ar1To27FvK5AAMm9k">
+    <% end%>
+<% end%>
+<%= form_with url: clickers_clear_path do |form| %>
+    <%= form.button do %>
+        Clear
+    <% end %>
+<% end%>
+
+    <marquee 
+    direction = "<%= marquee_direction%>"
+    behavior="alternate" 
+    scrollamount="<%= scroll_amount%>"
+    style= "color: <%= color_wheel%>"> 
+        <%=@clicker.clicks %>
+    </marquee>
+
+
+

@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+form button {
+    margin: 0.5em;
+    margin-inline: auto;
+    display: block;
+
+
+}
+
+marquee {
+    font-size: 15rem;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
