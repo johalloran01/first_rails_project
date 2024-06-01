@@ -15,4 +15,5 @@ class ClickersController < ApplicationController
     @clicker.save!
     redirect_to clickers_show_path
   end
+
 end
