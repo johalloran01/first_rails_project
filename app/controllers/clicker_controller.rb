@@ -1,6 +1,6 @@
 class ClickerController < ApplicationController
   def index
-    @pastry = Pastry.all
+    @pastries = Pastry.all
   end
 
   def click
@@ -17,10 +17,7 @@ class ClickerController < ApplicationController
 
   private
   def bake_pastry
-    images = {
-
-    }
-
+    #todo helper call
     img, name = images.to_a.sample
     Pastry.create(name: name, img: img, clicks: 0)
   end
