@@ -21,10 +21,4 @@ class ClickerController < ApplicationController
     Pastry.create(name: name, img: img, clicks: 0)
   end
 
-
-  def show
-    @pastry = Pastry.first
-  end
-
-
 end
