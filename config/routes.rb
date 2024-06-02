@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  post 'clickers/click'
-  get 'clickers/', to:"clickers#index"
-  post 'clickers/clear'
+  post 'pastries/click'
+  get 'pastries/', to:"pastries#index"
+  post 'pastries/clear'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "clickers#index"
+  root "pastries#index"
 end

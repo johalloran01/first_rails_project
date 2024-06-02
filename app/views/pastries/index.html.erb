@@ -1,12 +1,13 @@
 <h1>Click the Pastry. IF YOU DARE</h1>
-<%= form_with url: clickers_click_path do |form| %>
-    <%= @pastries.each do |pastry| %>   
+<h1><%= @total_click_count %></h1>
+<%= form_with url: pastries_click_path do |form| %>
+    <% @pastries.each do |pastry| %>   
         <%= form.button name: :id, value: pastry.id do %>
             <%= image_tag(pastry.img) %>
         <% end%>
     <% end %>
 <% end%>
-<%= form_with url: clickers_clear_path do |form| %>
+<%= form_with url: pastries_clear_path do |form| %>
     <%= form.button do %>
         Clear
     <% end %>
