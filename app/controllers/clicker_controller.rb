@@ -17,8 +17,8 @@ class ClickerController < ApplicationController
 
   private
   def bake_pastry
-    #todo helper call
-    img, name = images.to_a.sample
+
+    img, name = AssistantBakerHelper.random_name_and_image
     Pastry.create(name: name, img: img, clicks: 0)
   end
 
