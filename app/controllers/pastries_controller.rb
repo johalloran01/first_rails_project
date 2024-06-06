@@ -21,9 +21,7 @@ class PastriesController < ApplicationController
   end
 
   def clear
-    @pastry = Pastry.find(params[:id])
-    @pastry.clicks = 0
-    @pastry.clicks.save!
+    Pastry.update_all(clicks: 0)
     redirect_to pastries_path
   end
 
