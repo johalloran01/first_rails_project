@@ -15,7 +15,12 @@ form button {
     width: 150px;
     height: 150px;
     object-fit: contain;
+    transition: transform 0.1s;
 
+}
+
+.pastry_image:active {
+    transform: scale(0.95);
 }
 
 .clear_button {
