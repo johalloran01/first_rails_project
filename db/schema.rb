@@ -11,28 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_06_02_150308) do
-  create_table "brownies", force: :cascade do |t|
-    t.string "flavor"
-    t.string "deliciousness"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "clickers", force: :cascade do |t|
-    t.integer "clicks"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "brownie_id"
-    t.index ["brownie_id"], name: "index_clickers_on_brownie_id"
-  end
-
-  create_table "cookies", force: :cascade do |t|
-    t.string "flavor"
-    t.string "deliciousness"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "pastries", force: :cascade do |t|
     t.string "name"
     t.string "img"
