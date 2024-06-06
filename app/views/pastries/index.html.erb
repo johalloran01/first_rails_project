@@ -3,12 +3,12 @@
 <%= form_with url: pastries_click_path do |form| %>
     <% @pastries.each do |pastry| %>   
         <%= form.button name: :id, value: pastry.id do %>
-            <%= image_tag(pastry.img) %>
+            <%= image_tag(pastry.img, class:'pastry_image') %>
         <% end%>
     <% end %>
 <% end%>
 <%= form_with url: pastries_clear_path do |form| %>
-    <%= form.button do %>
+    <%= form.button class: 'clear_button' do %>
         Clear
     <% end %>
 <% end%>
