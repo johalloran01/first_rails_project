@@ -20,6 +20,14 @@ class PastriesController < ApplicationController
 
   end
 
+  def clear
+    @pastry = Pastry.find(params[:id])
+    @pastry.clicks = 0
+    @pastry.clicks.save!
+    redirect_to pastries_path
+  end
+
+
   private
   def bake_pastry
     name, img = AssistantBakerHelper.random_name_and_image
