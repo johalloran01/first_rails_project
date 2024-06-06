@@ -21,7 +21,8 @@ class PastriesController < ApplicationController
   end
 
   def clear
-    Pastry.update_all(clicks: 0)
+    Pastry.delete_all
+    bake_pastry
     redirect_to pastries_path
   end
 
