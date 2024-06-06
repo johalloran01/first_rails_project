@@ -2,7 +2,32 @@ h1 {
     text-align: center;
 }
 
+.background_image {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-bottom: -35%;
+}
+
+.background_image img {
+    z-index: 1;
+}
+
+.plate_image {
+    width: 60%;
+}
+
+.pastry_div {
+    position: relative;
+    z-index: 10;
+}
+
+.pastry_form {
+    z-index: inherit;
+}
+
 form button {
+    z-index: inherit;
     margin: 0.5em;
     margin-inline: auto;
     display: block;
@@ -11,7 +36,9 @@ form button {
 
 }
 
+
 .pastry_image {
+    z-index: inherit;
     width: 150px;
     height: 150px;
     object-fit: contain;
@@ -21,6 +48,10 @@ form button {
 
 .pastry_image:active {
     transform: scale(0.95);
+}
+
+.clear_button_container {
+    margin-top: 35%;
 }
 
 .clear_button {

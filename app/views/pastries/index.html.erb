@@ -1,17 +1,25 @@
 <h1>Click the Pastry. IF YOU DARE</h1>
 <h1><%= @total_click_count %></h1>
-<%= form_with url: pastries_click_path do |form| %>
-    <% @pastries.each do |pastry| %>   
-        <%= form.button name: :id, value: pastry.id do %>
-            <%= image_tag(pastry.img, class:'pastry_image') %>
-        <% end%>
-    <% end %>
-<% end%>
-<%= form_with url: pastries_clear_path do |form| %>
-    <%= form.button class: 'clear_button' do %>
-        Clear
-    <% end %>
-<% end%>
+
+<div class="background_image">
+  <%= image_tag('plate.png', class: 'plate_image') %>
+</div>
+<div class="pastry_div">
+    <%= form_with(url: pastries_click_path, html: {class: 'pastry_form'}) do |form| %>
+        <% @pastries.each do |pastry| %>   
+            <%= form.button name: :id, value: pastry.id do %>
+                <%= image_tag(pastry.img, class:'pastry_image') %>
+            <% end%>
+        <% end %>
+    <% end%>
+</div>
+<div class="clear_button_container">
+    <%= form_with url: pastries_clear_path do |form| %>
+        <%= form.button class: 'clear_button' do %>
+            Clear
+        <% end %>
+    <% end%>
+</div>
 
 
 
