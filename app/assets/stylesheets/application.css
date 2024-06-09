@@ -1,3 +1,10 @@
+body {
+    height: auto;
+    width: 100%;
+
+    overflow: auto;
+}
+
 h1 {
     text-align: center;
 }
@@ -14,7 +21,7 @@ h1 {
 }
 
 .plate_image {
-    width: 60%;
+    width: 50%;
 }
 
 .pastry_div {
@@ -51,7 +58,7 @@ form button {
 }
 
 .clear_button_container {
-    margin-top: 35%;
+    margin-top: 25%;
 }
 
 .clear_button {
@@ -61,5 +68,3 @@ form button {
 }
 
 marquee {}
-
-body {}
