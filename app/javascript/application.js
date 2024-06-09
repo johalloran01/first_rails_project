@@ -6,3 +6,4 @@ import anime from 'animejs'; // note that this is only available in the scope of
 
 // window.anime = anime // This is a hack you can use to add it to the global scope, but it's kind of discouraged except
 // for cases where you truly need to have a library in the global scope
+console.debug("HELLO")
