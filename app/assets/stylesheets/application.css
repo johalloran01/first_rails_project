@@ -13,7 +13,8 @@ h1 {
     z-index: 1;
     position: relative;
     text-align: center;
-    margin-bottom: -35%;
+    margin-top: 5%;
+    margin-bottom: -15%;
 }
 
 .background_image img {
@@ -58,7 +59,7 @@ form button {
 }
 
 .clear_button_container {
-    margin-top: 25%;
+    margin-top: 15%;
 }
 
 .clear_button {
